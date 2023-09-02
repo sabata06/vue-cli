@@ -13,7 +13,7 @@
             </div>
 
 
-            <div class="ml-auto flex items-center">
+            <div v-if="_isAuthenticated" class="ml-auto flex items-center">
                 <router-link to="/new" class="flex bg-gray-700 hover:bg-black text-white px-3 py-1 rounded-sm text-sm items-center mr-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" height="16" viewBox="0 0 24 24" width="16">
                       <path d="M0 0h24v24H0V0z" fill="none" />
@@ -50,7 +50,7 @@
                                     d="M15 7v12.97l-4.21-1.81-.79-.34-.79.34L5 19.97V7h10m4-6H8.99C7.89 1 7 1.9 7 3h10c1.1 0 2 .9 2 2v13l2 1V3c0-1.1-.9-2-2-2zm-4 4H5c-1.1 0-2 .9-2 2v16l7-3 7 3V7c0-1.1-.9-2-2-2z" />
                             </svg>
                             Favorites</a>
-                        <a href="#" class="menu-item">
+                        <a @click="onLogout" href="#" class="menu-item">
                             <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
                                 class="fill-current mr-1" height="24" viewBox="0 0 24 24" width="24">
                                 <g>
@@ -67,4 +67,20 @@
         </div>
     </nav>
 </div>
-<!-- ! HEADER --></template>
+<!-- ! HEADER -->
+</template>
+
+<script>
+import {mapGetters} from "vuex"
+export default {
+    computed:{
+        ...mapGetters(["_isAuthenticated"])
+    },
+    methods:{
+        onLogout(){
+            this.$store.commit("logoutUser");
+            this.$router.push('/login')
+        }
+    }
+}
+</script>

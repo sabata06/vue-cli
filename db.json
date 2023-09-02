@@ -1,6 +1,12 @@
 {
-    "users":[],
-    "bookmarks":[],
-    "categories":[]
-
+  "users": [
+    {
+      "username": "meyymetbaba",
+      "fullname": "mehmet Karaarslan",
+      "password": "ec4259c5a80a559d75995af9fcd9d8812fd251db",
+      "id": 1
+    }
+  ],
+  "bookmarks": [],
+  "categories": []
 }
