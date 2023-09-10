@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import NewBookmark from '../views/NewBookmark.vue'
+import Account from "../views/Account.vue"
 import store from "../store";
 const routes = [
   {
@@ -20,6 +21,21 @@ const routes = [
   {
     path: '/new',
     component: NewBookmark
+  },
+  {
+    path: '/favorites',
+    component: Account,
+    meta:"appBookmarkList"
+  },
+  {
+    path: '/likes',
+    component: Account,
+    meta:"appBookmarkList"
+  },
+  {
+    path: '/settings',
+    component: Account,
+    meta:"userSettings"
   },
 ]
 
