@@ -2,7 +2,7 @@
     
     <div>
         <div class="p-2 grid grid-cols-8 gap-4">
-         <BookmarkListItem v-for="i in 10" :key="i" />
+         <BookmarkListItem v-for="item in items" :key="item.id" :item="item" />
         </div>
     </div>
 
@@ -13,6 +13,14 @@ import BookmarkListItem from "./BookmarkListItem.vue"
 export default{
 components:{
     BookmarkListItem
+},
+props:{
+    items:{
+        type:[],
+        required:true,
+        default:()=>[]
+
+    }
 }
 }
 

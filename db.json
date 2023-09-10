@@ -7,6 +7,104 @@
       "id": 1
     }
   ],
-  "bookmarks": [],
-  "categories": []
+  "bookmarks": [
+    {
+      "title": "başlık 1",
+      "url": "kdhfaury347udfb",
+      "categoryId": 1,
+      "description": "vue js öğreniyorum",
+      "userId": 1,
+      "created_at": "2023-09-02T20:22:46.159Z",
+      "id": 1
+    },
+    {
+      "title": "başlık 2",
+      "url": "kdhfaury347udfasd",
+      "categoryId": 2,
+      "description": "vue js öğreniyorum 222",
+      "userId": 1,
+      "created_at": "2023-09-02T20:24:48.109Z",
+      "id": 2
+    },
+    {
+      "title": "frontend dünyası",
+      "url": "http vsvsv",
+      "categoryId": 3,
+      "description": "güzel bir kaynak",
+      "userId": 1,
+      "created_at": "2023-09-02T20:34:54.588Z",
+      "id": 3
+    },
+    {
+      "title": "asasda",
+      "url": "asdasdasda",
+      "categoryId": 4,
+      "description": "asdasdadasd",
+      "userId": 1,
+      "created_at": "2023-09-02T20:40:27.035Z",
+      "id": 4
+    },
+    {
+      "title": "React Öğreniyorum",
+      "url": "www.react.com",
+      "categoryId": 2,
+      "description": "Bu sayfa react sayfasıdır.",
+      "userId": 1,
+      "created_at": "2023-09-08T16:48:59.762Z",
+      "id": 5
+    },
+    {
+      "title": "Frontend Dünyası",
+      "url": "www.frontend.com",
+      "categoryId": 6,
+      "description": "Çok Güzel Bir Kaynak",
+      "userId": 1,
+      "created_at": "2023-09-08T17:02:31.865Z",
+      "id": 6
+    },
+    {
+      "title": "AWS",
+      "url": "www.aws.com",
+      "categoryId": 5,
+      "description": "Aws olmazsa olmazdır",
+      "userId": 1,
+      "created_at": "2023-09-08T17:03:33.712Z",
+      "id": 7
+    },
+    {
+      "title": "facebook",
+      "url": "https://www.facebook.com/",
+      "categoryId": 6,
+      "description": "facebook arkadaşlık sitesi",
+      "userId": 1,
+      "created_at": "2023-09-09T11:38:31.809Z",
+      "id": 8
+    }
+  ],
+  "categories": [
+    {
+      "name": "Vue.js",
+      "id": 1
+    },
+    {
+      "name": "React.js",
+      "id": 2
+    },
+    {
+      "name": "Frontend",
+      "id": 3
+    },
+    {
+      "name": "Backend",
+      "id": 4
+    },
+    {
+      "name": "Cloud",
+      "id": 5
+    },
+    {
+      "name": "Sosyal Yaşam",
+      "id": 6
+    }
+  ]
 }
